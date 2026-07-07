@@ -1,0 +1,1480 @@
+/*=========================================================
+        JAGAT SINGH TYAGI UCHTAR MADHYAMIK VIDYALAYA
+                GOVERNMENT SCHOOL WEBSITE
+                    STYLE.CSS - PART 1
+==========================================================*/
+
+
+/*==============================================
+            GOOGLE FONT
+==============================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/*==============================================
+                RESET CSS
+==============================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/*==============================================
+                COLORS
+==============================================*/
+
+:root{
+
+    --primary:#0B3D91;
+    --secondary:#1E88E5;
+    --gold:#F4B400;
+    --white:#ffffff;
+    --light:#f8f9fa;
+    --dark:#222;
+    --grey:#666;
+    --border:#dddddd;
+
+}
+
+
+/*==============================================
+            COMMON SECTION
+==============================================*/
+
+section{
+
+    padding:70px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h4{
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    color:var(--primary);
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+/*==============================================
+            TOP BAR
+==============================================*/
+
+.top-bar{
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 8%;
+
+    font-size:14px;
+
+}
+
+.top-left,
+.top-right{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.top-bar i{
+
+    color:var(--gold);
+
+    margin-right:6px;
+
+}
+
+
+/*==============================================
+                HEADER
+==============================================*/
+
+header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+/*==============================================
+                LOGO
+==============================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.logo p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+
+/*==============================================
+            NAVIGATION
+==============================================*/
+
+nav ul{
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+nav ul li a{
+
+    color:#222;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    padding-bottom:5px;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--secondary);
+
+}
+
+nav ul li a.active{
+
+    color:var(--primary);
+
+    border-bottom:3px solid var(--gold);
+
+}
+
+
+/*==============================================
+            HERO SECTION
+==============================================*/
+
+.hero{
+
+    height:90vh;
+
+    background:url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    background:rgba(0,0,0,.55);
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    color:white;
+
+    max-width:900px;
+
+    padding:20px;
+
+}
+
+.hero-content h3{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    line-height:1.3;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+/*==============================================
+            HERO BUTTONS
+==============================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:white;
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+
+/*==============================================
+            NOTICE BAR
+==============================================*/
+
+.notice-bar{
+
+    background:#FFF8E1;
+
+    border-top:2px solid var(--gold);
+
+    border-bottom:2px solid var(--gold);
+
+    padding:12px 0;
+
+}
+
+.notice-bar marquee{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:16px;
+
+}
+
+
+/*==============================================
+        END OF PART 1
+==============================================*/
+
+/*
+
+NEXT PART
+
+✔ About School
+
+✔ Principal Message
+
+✔ School Highlights
+
+✔ Government Schemes
+
+*/
+/*=========================================================
+        STYLE.CSS - PART 2
+-----------------------------------------------------------
+Contents
+1. About School
+2. Principal Section
+3. School Highlights
+4. Government Schemes
+=========================================================*/
+
+
+/*==============================================
+            ABOUT SCHOOL
+==============================================*/
+
+.about-home{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    background:white;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.about-content h4{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.about-content h2{
+
+    color:var(--primary);
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content p{
+
+    color:var(--grey);
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+    text-align:justify;
+
+}
+
+.read-more{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 32px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.read-more:hover{
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+}
+
+
+/*==============================================
+        PRINCIPAL'S MESSAGE
+==============================================*/
+
+.principal{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    background:#f8f9fa;
+
+}
+
+.principal-content h4{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.principal-content h2{
+
+    color:var(--primary);
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.principal-content p{
+
+    color:var(--grey);
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+    text-align:justify;
+
+}
+
+.principal-image{
+
+    text-align:center;
+
+}
+
+.principal-image img{
+
+    width:300px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    margin:auto;
+
+    border-radius:15px;
+
+    border:6px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+/*==============================================
+            SCHOOL HIGHLIGHTS
+==============================================*/
+
+.highlights{
+
+    background:white;
+
+}
+
+.highlight-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.highlight-card{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    border-top:5px solid var(--primary);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.highlight-card i{
+
+    font-size:55px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.highlight-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.highlight-card p{
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+}
+
+
+/*==============================================
+        GOVERNMENT SCHEMES
+==============================================*/
+
+.schemes{
+
+    background:#eef5ff;
+
+}
+
+.scheme-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.scheme-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-left:6px solid var(--gold);
+
+    border-radius:10px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.scheme-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.scheme-box h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.scheme-box p{
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+}
+
+
+/*==============================================
+            SIMPLE FADE ANIMATION
+==============================================*/
+
+.about-home,
+.principal,
+.highlight-card,
+.scheme-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==============================================
+        END OF PART 2
+==============================================*/
+
+/*
+
+NEXT PART
+
+✔ Notice Board
+
+✔ Gallery Preview
+
+✔ Contact Preview
+
+✔ Footer
+
+*/
+/*=========================================================
+            STYLE.CSS - PART 3
+-----------------------------------------------------------
+Contents
+1. Notice Board
+2. Gallery Preview
+3. Contact Preview
+4. Footer
+=========================================================*/
+
+
+/*==============================================
+            NOTICE BOARD
+==============================================*/
+
+.notice-board{
+
+    background:#ffffff;
+
+}
+
+.notice-list{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.notice-item{
+
+    background:#f8f9fa;
+
+    border-left:6px solid var(--primary);
+
+    margin-bottom:20px;
+
+    padding:20px 25px;
+
+    font-size:17px;
+
+    color:#444;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.notice-item:hover{
+
+    background:#eef5ff;
+
+    transform:translateX(8px);
+
+}
+
+
+/*==============================================
+            GALLERY PREVIEW
+==============================================*/
+
+.gallery-preview{
+
+    background:#f5f7fa;
+
+}
+
+.gallery-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.gallery-container img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.gallery-container img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/*==============================================
+            CONTACT PREVIEW
+==============================================*/
+
+.contact-preview{
+
+    background:white;
+
+}
+
+.contact-preview p{
+
+    color:var(--grey);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.contact-preview .btn-primary{
+
+    margin-top:15px;
+
+}
+
+
+/*==============================================
+                FOOTER
+==============================================*/
+
+footer{
+
+    background:#082a63;
+
+    color:white;
+
+    padding:60px 8% 20px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+}
+
+.footer-box h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.footer-box p{
+
+    line-height:1.8;
+
+    color:#dddddd;
+
+    margin-bottom:10px;
+
+}
+
+.footer-box ul{
+
+    list-style:none;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+    color:var(--gold);
+
+    padding-left:8px;
+
+}
+
+.footer-box i{
+
+    color:var(--gold);
+
+    margin-right:10px;
+
+}
+
+footer hr{
+
+    margin:40px 0 20px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.25);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    font-size:15px;
+
+    color:#cccccc;
+
+}
+
+
+/*==============================================
+            BUTTON HOVER
+==============================================*/
+
+.btn-primary,
+.btn-secondary,
+.read-more{
+
+    transition:all .3s ease;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.read-more:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/*==============================================
+            SCROLLBAR
+==============================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eeeeee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0d47a1;
+
+}
+
+
+/*==============================================
+        END OF PART 3
+==============================================*/
+
+/*
+
+PART 4 (FINAL)
+
+✔ Mobile Responsive (768px)
+
+✔ Tablet Responsive
+
+✔ Small Mobile Responsive
+
+✔ Utility Classes
+
+✔ Final Optimizations
+
+*/
+/*=========================================================
+        STYLE.CSS - PART 4 (FINAL)
+-----------------------------------------------------------
+Contents
+1. Tablet Responsive
+2. Mobile Responsive
+3. Small Mobile
+4. Utility Classes
+5. Animations
+=========================================================*/
+
+
+/*==============================================
+        TABLET RESPONSIVE
+==============================================*/
+
+@media screen and (max-width:992px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+    .hero{
+
+        height:75vh;
+
+    }
+
+    .hero-content h1{
+
+        font-size:45px;
+
+    }
+
+    .hero-content p{
+
+        font-size:20px;
+
+    }
+
+    .about-home,
+    .principal{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .about-content p,
+    .principal-content p{
+
+        text-align:center;
+
+    }
+
+    .principal-image{
+
+        order:-1;
+
+    }
+
+    .gallery-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*==============================================
+        MOBILE RESPONSIVE
+==============================================*/
+
+@media screen and (max-width:768px){
+
+    .top-bar{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:10px;
+
+    }
+
+    .top-left,
+    .top-right{
+
+        justify-content:center;
+
+    }
+
+    .logo{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .logo img{
+
+        width:60px;
+
+        height:60px;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    section{
+
+        padding:60px 6%;
+
+    }
+
+    .hero{
+
+        height:70vh;
+
+    }
+
+    .hero-content h3{
+
+        font-size:18px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+
+        line-height:1.4;
+
+    }
+
+    .hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:220px;
+
+        text-align:center;
+
+    }
+
+    .section-title h2{
+
+        font-size:32px;
+
+    }
+
+    .about-content h2,
+    .principal-content h2{
+
+        font-size:30px;
+
+    }
+
+    .gallery-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .highlight-container,
+    .scheme-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/*==============================================
+        SMALL MOBILE
+==============================================*/
+
+@media screen and (max-width:480px){
+
+    .hero{
+
+        height:65vh;
+
+    }
+
+    .hero-content h1{
+
+        font-size:28px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .hero-content h3{
+
+        font-size:16px;
+
+    }
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+    .section-title h4{
+
+        font-size:14px;
+
+    }
+
+    .about-content h2,
+    .principal-content h2{
+
+        font-size:26px;
+
+    }
+
+    .highlight-card{
+
+        padding:25px;
+
+    }
+
+    .scheme-box{
+
+        padding:22px;
+
+    }
+
+    .principal-image img{
+
+        width:230px;
+
+        height:280px;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/*==============================================
+        IMAGE HOVER
+==============================================*/
+
+.about-image img,
+.principal-image img,
+.gallery-container img{
+
+    transition:0.4s;
+
+}
+
+.about-image img:hover,
+.principal-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/*==============================================
+        CARD ANIMATION
+==============================================*/
+
+.highlight-card,
+.scheme-box,
+.notice-item{
+
+    transition:all .3s ease;
+
+}
+
+
+/*==============================================
+        TEXT SELECTION
+==============================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/*==============================================
+        REMOVE OUTLINE
+==============================================*/
+
+button,
+input,
+textarea{
+
+    outline:none;
+
+}
+
+
+/*==============================================
+        SMOOTH TRANSITIONS
+==============================================*/
+
+*{
+
+    transition:background-color .3s,
+               color .3s,
+               border .3s;
+
+}
+
+
+/*==============================================
+        END OF FILE
+==============================================*/
